@@ -24,13 +24,18 @@ def get_days_from_today(date):
 import random
 def get_numbers_ticket(min, max, quantity):
     if min < 1 or max > 1000 or max <= min or quantity > (max - min + 1):
-        return "Error: Invalid input parameters"
+        return []
     else:
         numbers = random.sample(range(min, max + 1), quantity)
         return sorted(numbers)
   
 # print(f"Function returns: {get_numbers_ticket(min, max, quantity)}") # function testrun to verify the result
 
+# Task 3:
 
+def normalize_phone(phone_number)
+    pass
+
+    
 
 
