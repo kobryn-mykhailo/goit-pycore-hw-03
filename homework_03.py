@@ -17,6 +17,18 @@ def get_days_from_today(date):
 
 # Task 2:
 
+# min = int(input("Enter the minimum number (between 1 and 999): ")) # Test input for "min"
+# max = int(input("Enter the maximum number (between 2 and 1000): ")) # Test input for "max"
+# quantity = int(input("Enter the quantity of numbers to generate: ")) # Test input for "quantity"
 
+import random
+def get_numbers_ticket(min, max, quantity):
+    if min < 1 or max > 1000 or max <= min or quantity > (max - min + 1):
+        return print("Error: Invalid input parameters")
+    else:
+        numbers = random.sample(range(min, max + 1), quantity)
+        return sorted(numbers)
+  
+# print(f"Function returns: {get_numbers_ticket(min, max, quantity)}") # function testrun to verify the result
 
 
