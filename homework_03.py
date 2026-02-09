@@ -1,5 +1,6 @@
-# Task 1: Generating a function that calculates the number of days from given date to today.
+# Task 1:
 
+# Testing input for Task 1
 # date = input("Enter a date formatted as YYYY-MM-DD: ") # input for testing the function execution
 
 from datetime import datetime
@@ -12,11 +13,13 @@ def get_days_from_today(date):
     except ValueError: 
         return "Invalid date format. Please use YYYY-MM-DD format."
 
+# Testing
 # print(f"Here's the end result of the task: {get_days_from_today(date)}") # result output for testing
 
 
 # Task 2:
 
+# Testing inputs for Task 2
 # min = int(input("Enter the minimum number (between 1 and 999): ")) # Test input for "min"
 # max = int(input("Enter the maximum number (between 2 and 1000): ")) # Test input for "max"
 # quantity = int(input("Enter the quantity of numbers to generate: ")) # Test input for "quantity"
@@ -28,7 +31,8 @@ def get_numbers_ticket(min, max, quantity):
     else:
         numbers = random.sample(range(min, max + 1), quantity)
         return sorted(numbers)
-  
+
+# Testing
 # print(f"Function returns: {get_numbers_ticket(min, max, quantity)}") # function testrun to verify the result
 
 # Task 3:
@@ -59,7 +63,8 @@ raw_numbers = [
 ]
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
-    
+
+# Testing
 # print(f"Normalized phone numbers for SMS: {sanitized_numbers}") # testing the output of the function that sanityzes the phone numbers
 
 # Task 4:
@@ -95,12 +100,12 @@ def get_upcoming_birthdays(users):
     
     return upcoming
 
-# testing
+# Testing
 # users = [
 #     {"name": "John Doe", "birthday": "1985.02.13"},
 #     {"name": "Jane Smith", "birthday": "1990.01.27"}
 # ]
 
-# print(get_upcoming_birthdays(users))
+# print(get_upcoming_birthdays(users)) # testing the function operability with a sample dictionary of users with birthdays
 
 
